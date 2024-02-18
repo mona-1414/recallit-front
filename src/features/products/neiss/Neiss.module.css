@@ -1,0 +1,15 @@
+.Container {
+  width: 100vw;
+  height: auto;
+  margin: 1rem 0;
+  background-color: white;
+}
+
+.Title {
+  margin: 1rem 0;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}

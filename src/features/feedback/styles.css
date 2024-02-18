@@ -1,0 +1,174 @@
+
+
+.feedbackForm {
+  position: fixed;
+  background-color: #e7f9ff;
+  bottom: 70px;
+  left: 1%;
+  width: 98%;
+  border-radius: 5px;
+  height: 75%;
+  border: 2px solid #e4e4e4;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: auto;   
+}
+
+.feedback-button {
+  position: absolute;
+  display: inline-block;
+  left: 310px;
+  bottom: 25px;
+  cursor: pointer;
+  outline: none;
+  animation: 1s ease-in 0s 1 fadeIn;
+  border: none;
+  background: none;
+  z-index: 0;
+}
+
+.feedback-button img {
+  object-fit: cover;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background: none;
+}
+
+.feedback-button .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  padding: 2px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.feedback-button:hover .tooltiptext {
+  visibility: visible;
+}
+
+h3 {
+  color: rgb(53, 125, 199);
+}
+
+.feedback-form {
+  margin: 10px auto;
+  padding: 20px 20px 70px 20px;
+  font: 13px;
+}
+.feedback-form li {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 20px 0 0 0;
+}
+.feedback-form label {
+  margin: 0 0 3px 0;
+  padding: 0px;
+  display: block;
+  font-weight: bold;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+textarea,
+select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #bebebe;
+  padding: 7px;
+  margin: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form textarea:focus,
+.feedback-form select:focus {
+  -moz-box-shadow: 0 0 8px rgb(53, 125, 199);
+  -webkit-box-shadow: 0 0 8px rgb(53, 125, 199);
+  box-shadow: 0 0 8px rgb(53, 125, 199);
+  border: 1px solid rgb(53, 125, 199);
+}
+.feedback-form .field-divided {
+  width: 100%;
+}
+
+.feedback-form .field-long {
+  width: 100%;
+}
+.feedback-form .field-select {
+  width: 100%;
+}
+
+.feedback-form .field-textarea {
+  height: 100px;
+}
+.feedback-form input[type="submit"],
+.form-style-1 input[type="button"] {
+  background: rgb(53, 125, 199);
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+}
+.feedback-form input[type="submit"]:hover,
+.form-style-1 input[type="button"]:hover {
+  background: rgb(53, 125, 199);
+  box-shadow: none;
+  cursor: pointer;
+}
+.feedback-form .required {
+  color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.rate {
+  float: left;
+  height: 40px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -99999999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 28px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}

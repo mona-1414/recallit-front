@@ -1,0 +1,193 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App {
+  height: 100vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.close-button{
+  position:absolute;
+  color:black;
+  border: none;
+  background-color: white;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 20px;
+  margin: 1px 1px;
+  border-radius:45%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.logo_window{
+  position:absolute;
+  bottom: 0%;
+  z-index: 7;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.kid {
+  position:absolute;
+  bottom: 0%;
+  padding-left: 60px;
+  width: 250px;
+  border: 2px solid #FFD202;
+  border-radius: 50px;
+  cursor: pointer;
+  animation: 1s ease-in 0s 1 fadeIn;
+  padding-right: 10px;
+  background: #fff;
+}
+
+.logo img {
+  object-fit: cover;
+  height: 56px;
+  width: 56px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  z-index: 1;
+	animation-name: zoominout;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
+
+@keyframes zoominout {
+  0% {
+      transform: scale(0,0);
+      opacity: 0.1;
+  }
+  10% {
+      transform: scale(1,1);
+      opacity: 1;
+  }
+  40% {
+      transform: scale(0.8,0.8);
+      opacity: 0.5;
+  }
+  70% {
+      transform: scale(1,1);
+      opacity: 1;
+  }
+  85% {
+      transform: scale(0.8,0.8);
+      opacity: 0.5;
+  }
+  100% {
+      transform: scale(1,1);
+      opacity: 1;
+  }
+}
+
+.resultWindow {
+  position: absolute;
+  bottom: 70px;
+  left: 1%;
+  width: 98%;
+  height: 72%;
+  border-radius: 5px;
+  padding: 0 1rem;
+  color: black;
+  background-color: #e7f9ff;
+  border: 2px solid #E4E4E4;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+}
+
+.imgWindow {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.loading{
+  display:block;
+  background-color:lightgrey;
+  padding:1rem;
+  width:16rem;
+  border-radius:5px;
+  left:1%;
+  height: 1rem;
+  margin-bottom:1rem;
+}
+
+.none{
+  display: none;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+  font-size: 0.85rem;
+}
+
+.test{
+  padding-bottom: 15px;
+}
+
+.productLinks, .productNoLinks{
+  display: inline;
+}
+
+.resultWrapper{
+  padding-top:20px;
+}
+
+
